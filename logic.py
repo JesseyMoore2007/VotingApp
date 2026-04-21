@@ -2,6 +2,9 @@ from PyQt6.QtWidgets import *
 from gui import *
 import csv
 
+#display votes
+#uncheck radio boxes
+
 class Logic(QMainWindow, Ui_MainWindow):
     def __init__(self) -> None:
         super().__init__()
@@ -11,8 +14,13 @@ class Logic(QMainWindow, Ui_MainWindow):
         self.__votes:list = []
         self.__john_votes = 0
         self.__jane_votes = 0
+        self.John_Label.setText(f"John: {self.__john_votes}")
+        self.Jane_Label.setText(f"Jane: {self.__jane_votes}")
 
-        first_row = ["ID", "Candidate", "John Votes", "Jane Votes"]
+        self.John_Radio.setAutoExclusive(True)
+        self.Jane_Radio.setAutoExclusive(True)
+
+        first_row = ["ID", "Candidate"]
         with open("votes.csv", "w", newline="") as csvfile:
             csv_writer = csv.writer(csvfile)
             csv_writer.writerow(first_row)
@@ -45,16 +53,23 @@ class Logic(QMainWindow, Ui_MainWindow):
                     else:
                         raise ValueError("Pick A Candidate")
                     self.__votes.append(user_id)
-                    csv_writer.writerow([user_id, candidate, self.__john_votes, self.__jane_votes])
+                    csv_writer.writerow([user_id, candidate])
             except ValueError as e:
                 self.Error_Label.setStyleSheet("color: red")
                 self.Error_Label.setText(str(e))
             else:
                 self.Error_Label.setStyleSheet("color: green")
                 self.Error_Label.setText(f"Vote Submitted!")
+                self.John_Label.setText(f"John: {self.__john_votes}")
+                self.Jane_Label.setText(f"Jane: {self.__jane_votes}")
                 self.clear()
 
     def clear(self):
-        self.John_Radio.checked = False
+        ##reset those
+        self.John_Radio.setAutoExclusive(False)
+        self.Jane_Radio.setAutoExclusive(False)
+        self.John_Radio.setChecked(False)
         self.Jane_Radio.setChecked(False)
+        self.John_Radio.setAutoExclusive(True)
+        self.Jane_Radio.setAutoExclusive(True)
         self.ID_Input.setText("")

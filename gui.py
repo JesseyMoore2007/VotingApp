@@ -4,9 +4,9 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(378, 423)
-        MainWindow.setMinimumSize(QtCore.QSize(378, 423))
-        MainWindow.setMaximumSize(QtCore.QSize(378, 423))
+        MainWindow.resize(378, 450)
+        MainWindow.setMinimumSize(QtCore.QSize(378, 450))
+        MainWindow.setMaximumSize(QtCore.QSize(378, 450))
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.ID_Input = QtWidgets.QLineEdit(self.centralwidget)
@@ -58,6 +58,18 @@ class Ui_MainWindow(object):
         font.setItalic(False)
         self.Error_Label.setFont(font)
         self.Error_Label.setObjectName("Error_Label")
+        self.John_Label = QtWidgets.QLabel(self.centralwidget)
+        self.John_Label.setGeometry(QtCore.QRect(110, 330, 500, 150))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.John_Label.setFont(font)
+        self.John_Label.setObjectName("John_Label")
+        self.Jane_Label = QtWidgets.QLabel(self.centralwidget)
+        self.Jane_Label.setGeometry(QtCore.QRect(200, 330, 500, 150))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.Jane_Label.setFont(font)
+        self.Jane_Label.setObjectName("Jane_Label")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 378, 21))
@@ -80,6 +92,8 @@ class Ui_MainWindow(object):
         self.Jane_Radio.setText(_translate("MainWindow", "Jane"))
         self.Submit_Button.setText(_translate("MainWindow", "SUBMIT VOTE"))
         self.Error_Label.setText(_translate("MainWindow", ""))
+        self.John_Label.setText(_translate("MainWindow", ""))
+        self.Jane_Label.setText(_translate("MainWindow", ""))
 
 
 if __name__ == "__main__":
