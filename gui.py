@@ -52,7 +52,7 @@ class Ui_MainWindow(object):
         self.Submit_Button.setFont(font)
         self.Submit_Button.setObjectName("Submit_Button")
         self.Error_Label = QtWidgets.QLabel(self.centralwidget)
-        self.Error_Label.setGeometry(QtCore.QRect(120, 330, 141, 60))
+        self.Error_Label.setGeometry(QtCore.QRect(120, 330, 200, 60))
         font = QtGui.QFont()
         font.setPointSize(16)
         font.setItalic(False)

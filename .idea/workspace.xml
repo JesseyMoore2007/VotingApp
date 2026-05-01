@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44850d09-b385-4171-8ed1-8541ce4da24d" name="Changes" comment="It pretty much all works. Just a few minor changes inbound.">
+    <list default="true" id="44850d09-b385-4171-8ed1-8541ce4da24d" name="Changes" comment="I have everything that was asked of me. Tracks the votes at the bottom, resets the radio button, and everything else. Looking good.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/logic.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,13 +113,22 @@
       <option name="project" value="LOCAL" />
       <updated>1776716443408</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="I have everything that was asked of me. Tracks the votes at the bottom, resets the radio button, and everything else. Looking good.">
+      <option name="closed" value="true" />
+      <created>1776806329642</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1776806329642</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="This is a blank main. Just testing the repo" />
     <MESSAGE value="There are a few things now" />
     <MESSAGE value="It pretty much all works. Just a few minor changes inbound." />
-    <option name="LAST_COMMIT_MESSAGE" value="It pretty much all works. Just a few minor changes inbound." />
+    <MESSAGE value="I have everything that was asked of me. Tracks the votes at the bottom, resets the radio button, and everything else. Looking good." />
+    <option name="LAST_COMMIT_MESSAGE" value="I have everything that was asked of me. Tracks the votes at the bottom, resets the radio button, and everything else. Looking good." />
   </component>
 </project>
